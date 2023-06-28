@@ -196,7 +196,7 @@ let loop_delay = 1;
 let loop = 0;
 setInterval(function () {
   if (loop < 1) {
-    tableCreate();
+    // tableCreate();
   }
   loop++;
 }, 300 * loop_delay);
@@ -350,7 +350,7 @@ function gameover() {
   // setHighscore(username, score);
   document.getElementById("score").innerHTML = "Score: " + score;
   
-  tableCreate();
+  // tableCreate();
   drawApple(true);
   score = 2;
 }
