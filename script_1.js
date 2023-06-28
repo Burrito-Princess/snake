@@ -355,30 +355,30 @@ function gameover() {
   score = 2;
 }
 
-function tableCreate() {
-  if (done == true) {
-    document.getElementById("table").remove();
-  }
-  const body = document.body,
-    tbl = document.createElement("table");
-  tbl.id = "table";
-  tbl.style.width = "150px";
-  tbl.style.border = "1px solid black";
+// function tableCreate() {
+//   if (done == true) {
+//     document.getElementById("table").remove();
+//   }
+//   const body = document.body,
+//     tbl = document.createElement("table");
+//   tbl.id = "table";
+//   tbl.style.width = "150px";
+//   tbl.style.border = "1px solid black";
 
-  for (let i = 0; i < 6; i++) {
-    const tr = tbl.insertRow();
-    for (let j = 0; j < 2; j++) {
-      const td = tr.insertCell();
-      if (j == 0) {
-        let name = dataArray[i].name;
-        td.appendChild(document.createTextNode(name));
-      } else if (j == 1) {
-        let score = dataArray[i].score;
-        td.appendChild(document.createTextNode(score));
-      }
-      td.style.border = "1px solid white";
-    }
-  }
-  document.getElementById("leader-board").appendChild(tbl);
-  done = true;
-}
+//   for (let i = 0; i < 6; i++) {
+//     const tr = tbl.insertRow();
+//     for (let j = 0; j < 2; j++) {
+//       const td = tr.insertCell();
+//       if (j == 0) {
+//         let name = dataArray[i].name;
+//         td.appendChild(document.createTextNode(name));
+//       } else if (j == 1) {
+//         let score = dataArray[i].score;
+//         td.appendChild(document.createTextNode(score));
+//       }
+//       td.style.border = "1px solid white";
+//     }
+//   }
+//   document.getElementById("leader-board").appendChild(tbl);
+//   done = true;
+// }
