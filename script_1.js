@@ -163,34 +163,7 @@ let rainbow_array = ["red", "orange", "yellow", "green", "blue", "purple"];
 let colour;
 let count = 0;
 
-// const getHighscores = async () => {
-//   return await fetch("php-database/get_highscore.php", {
-//     method: "GET",
-//     mode: "same-origin",
-//     credentials: "same-origin",
-//     headers: {
-//       Accept: "application/json, text/plain, */*",
-//       "Content-Type": "application/json",
-//     },
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data;
-//     });
-// };
-/////////////// Timer ///////////////
 
-// let highscores;
-
-// highscores = getHighscores();
-// highscores
-//   .then((data) => {
-//     dataArray = data;
-//     console.log(dataArray);
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
 
 let loop_delay = 1;
 let loop = 0;
@@ -317,26 +290,7 @@ function timer() {
   }
 }
 
-// setTimeout(function () {
-//   tableCreate();
-// }, tik/4);
 
-// const setHighscore = async (name, score) => {
-//   return await fetch("php-database/set_highscore.php", {
-//     method: "POST",
-//     mode: "same-origin",
-//     credentials: "same-origin",
-//     headers: {
-//       Accept: "application/json, text/plain, */*",
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({ name, score }),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data;
-//     });
-// };
 
 function gameover() {
   let username = "DIP";
@@ -354,31 +308,3 @@ function gameover() {
   drawApple(true);
   score = 2;
 }
-
-// function tableCreate() {
-//   if (done == true) {
-//     document.getElementById("table").remove();
-//   }
-//   const body = document.body,
-//     tbl = document.createElement("table");
-//   tbl.id = "table";
-//   tbl.style.width = "150px";
-//   tbl.style.border = "1px solid black";
-
-//   for (let i = 0; i < 6; i++) {
-//     const tr = tbl.insertRow();
-//     for (let j = 0; j < 2; j++) {
-//       const td = tr.insertCell();
-//       if (j == 0) {
-//         let name = dataArray[i].name;
-//         td.appendChild(document.createTextNode(name));
-//       } else if (j == 1) {
-//         let score = dataArray[i].score;
-//         td.appendChild(document.createTextNode(score));
-//       }
-//       td.style.border = "1px solid white";
-//     }
-//   }
-//   document.getElementById("leader-board").appendChild(tbl);
-//   done = true;
-// }
